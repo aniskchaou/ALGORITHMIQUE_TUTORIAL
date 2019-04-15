@@ -6,23 +6,28 @@ public class Palindrome {
     public static void main(String[] args) {
         
         char[] tab={'a','b','c','a'};
-        System.err.println(""+palindrome(tab));
+        System.err.println(""+isPalindrome(tab));
     }
     
-    public static boolean  palindrome(char tab[])
-    {   
-        //initialisation
-        int i=0;
-        boolean resultat=true;
-        
-        //algorithme
-        for (int j = 0; j < tab.length; j++) {
-            if (tab[j]!=tab[tab.length+-j]) {
-                resultat=false;
-                j=tab.length+1;
-            }
-        }
-       return resultat; 
-    }
+  public static  boolean isPalindrome(char[] array) {
+	int length = array.length;
+	for (int index = 0; index < array.length; index++) {
+		// get the element from the start
+		int start = array[index];
+		// get corresponding element from end
+		int end = array[--length];
+		// check if elements till the middle have been compared
+		if (length < index) {
+			return true;
+		}
+		// if start element is not the same as end element, the array is not
+		// palindrome
+		if (start != end) {
+			return false;
+		}
+	}
+	// if the control reaches here, means all the elements were same 
+return true;
+}
  
 }

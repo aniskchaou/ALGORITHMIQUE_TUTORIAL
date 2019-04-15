@@ -12,12 +12,18 @@ public class InverserTableau {
         
         //algorithme
         while (i < j) {
+            
             x = tab[j];
+            
             tab[j] = tab[i];
+            
             tab[i] = x;
+            
             i++;
             j--;
         }
+        
+       
         
         //affichage
         for (int k = 0; k < tab.length; k++) {

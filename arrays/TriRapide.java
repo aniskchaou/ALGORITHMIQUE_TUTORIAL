@@ -25,9 +25,13 @@ public class TriRapide {
             for (i = 0; i < tab.length - 1; i++) {
 
                 if (tab[i] > tab[i + 1]) {
+                    
                     x = tab[i];
+                    
                     tab[i] = tab[i + 1];
+                    
                     tab[i + 1] = x;
+                    
                     changement = true;
                 }
 
