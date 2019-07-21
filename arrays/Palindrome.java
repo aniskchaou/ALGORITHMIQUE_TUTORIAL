@@ -5,7 +5,7 @@ public class Palindrome {
     
     public static void main(String[] args) {
         
-        char[] tab={'a','b','c','a'};
+        char[] tab={'a','b','b','a'};
         System.err.println(""+isPalindrome(tab));
     }
     

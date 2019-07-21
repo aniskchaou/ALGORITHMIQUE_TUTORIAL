@@ -12,9 +12,9 @@ public class FibonacciSeries {
     
 
     public static void main(String[] args) {
-        int n = 10;
+        int n = 3;
          int N =printFibonacci(n);
-      System.out.println(printFibonacci(N));
+      System.out.println(N);
     }
 }
 
