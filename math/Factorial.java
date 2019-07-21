@@ -14,4 +14,21 @@ public class Factorial {
         }
         System.out.printf("Factorial of %d = %d", num, factorial);
     }
+    
+    
+    //recursive function
+    public int factorial(int num)
+        {
+            /* local variable declaration */
+            int result;
+            if (num == 1)
+            {
+                return 1;
+            }
+            else
+            {
+                result = factorial(num - 1) * num;
+                return result;
+            }
+        }
 }
